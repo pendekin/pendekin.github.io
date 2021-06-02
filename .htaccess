@@ -1,0 +1,7 @@
+#mengaktfikan mode rewrite
+RewriteEngine On
+#membuat permalink sederhana dengan regex [a-zA-Z0-9]
+RewriteRule ^([a-zA-Z0-9]+)/?/?$ 	redirect.php?url=$1
+
+RewriteEngine on
+RewriteRule ^(.*)\.html$ $1.php [nc]
