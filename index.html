@@ -1,6 +1,6 @@
 <?php
-// Memanggil file config.php
-include("config.php");
+// Memanggil file config.html
+include("config.html");
 // Membuat fungsi "acak()"
 function acak($panjang)
 {
@@ -32,7 +32,7 @@ function acak($panjang)
           $url_pendek = acak(2).substr(uniqid(), 6, 5);
 // Jika variabel $url_asli kosong
           if(!$url_asli) {
-            echo "Masukan url anda. <a href='index.php'>Kembali</a>";
+            echo "Masukan url anda. <a href='index.html'>Kembali</a>";
 // Sebaliknya
           }else{
             // Jika berhasil menginput data ke database
