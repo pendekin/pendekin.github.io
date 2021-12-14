@@ -1,0 +1,11 @@
+.stickAd{position:fixed;bottom:0;left:0;right:0;width:100%;min-height:70px;max-height:200px;padding:5px 5px;box-shadow:0 -6px 18px 0 rgba(9,32,76,.1);transition:all .1s ease-in;display:flex;align-items:center;justify-content:center;background-color:#fefefe;z-index:50;border-top:1px solid #eceff1}
+.stickAdclose{width:40px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:12px 0 0;border:1px solid #eceff1;border-bottom:0;border-right:0;position:absolute;right:0;top:-30px;background-color:inherit}
+.stickAdclose svg{width:18px;height:18px;fill:none!important;stroke:#48525c;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+.stickAdcontent{flex-grow:1;overflow:hidden;display:block;position:relative}
+.stickAdin:checked ~ .stickAd{padding:0;min-height:0}
+.stickAdin:checked ~ .stickAd .stickAdcontent{display:none}
+.stickAdin:checked ~ .stickAd .stickAdclose svg{-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+  
+/* CSS darkmode sesuaikan classnya jika berbeda atau hapus bagian ini */
+.darkMode .stickAd,.darkMode .stickAdclose{border-color:rgba(255,255,255,.1)}
+.darkMode .stickAd{background-color:#2d2d30}
