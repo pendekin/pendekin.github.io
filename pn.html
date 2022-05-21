@@ -1,0 +1,41 @@
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+<div class="rounded shadow bg-white mb-2 mt-2 p-2">
+<center>Peninjauan Pertama Untuk Withdraw</center>
+
+<div class="mb-2 p-2 text-center">
+<form><textarea cols="30" id="usn" placeholder="Input UserName" type="text"></textarea><br />
+<textarea cols="30" id="trf" placeholder="contoh: Instagram, Youtube, Blog. Masukan URL jika perlu seperti contoh https://namablog.com, dalam proses peninjauan sertakan juga screenshot" rows="7" type="text"></textarea></form>
+</div>
+
+<div class="text-center">
+<div class="mt-2 btn btn-success btn-sm" onclick="tnj()">Peninjauan</div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>NB: Diperuntukan khusus untuk member yang melakukan withdraw pertama kali, atau member lama sejak peraturan ini di buat 20-Mei-2022. jika tidak melakukan peninjauan maka tidak akan di proses.&nbsp;</p>
+
+<p>Keunggulan yang di dapatkan setelah peninjauan withdraw adalah :&nbsp;</p>
+
+<p>1. Withdraw selanjutnya tidak di proses lama, bahkan bisa dalam hitungan menit.&nbsp;</p>
+
+<p>2. Tidak perlu peninjauan di next withdraw</p>
+
+<p>3. Tidak akan pending lebih 1 hari jika withdraw</p>
+
+<p>4. Member yang aktif dan bersih akan mendapatkan prioritas pada saat withdraw termasuk antrian.&nbsp;</p>
+</div>
+<script>
+  function tnj(){
+    var usn = document.getElementById('usn').value;
+    var trf = document.getElementById('trf').value;
+    var wa= "https://wa.me/6285172192077?text=";
+    var kat= encodeURI("Hallo Admin Getduit.com, saya withdraw dan masih pending.");
+    var kate= encodeURI("Username: ");
+    var kat2= encodeURI("Asal traffic dari: ");
+    
+    var encd= kat + '%0A' + '%0A' + kate + usn + '%0A' + kat2 + trf;
+   
+    window.open (wa+encd) ;
+  }
+</script>
